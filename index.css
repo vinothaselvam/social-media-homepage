@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+  font-family: 'Georgia', serif; /* Stylish serif font */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f0f8ff, #e6e6fa); /* Soft pastel gradient */
+  color: #444;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-size: 2.5rem;
+  font-style: italic; /* Italic title */
+  color: #4a90e2;
+  background: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #dcdcdc;
+}
+
+/* Posts Container */
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual Post Card */
+.post {
+  width: 320px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-style: italic; /* Italic text for entire post */
+}
+
+.post:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Post Header */
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #4a90e2;
+  color: #ffffff;
+  font-style: normal; /* Keep header text normal for contrast */
+  font-weight: bold;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+/* Post Content */
+.post h4 {
+  margin: 15px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.post p {
+  margin: 0 15px 15px;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Comments Section */
+.comments {
+  padding: 10px 15px;
+  background: #fafafa;
+  border-top: 1px solid #ddd;
+  font-style: normal; /* Normal text style for comments */
+}
+
+.comments h5 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: #4a90e2;
+}
+
+.comment {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment strong {
+  display: block;
+  font-size: 1rem;
+  font-style: italic; /* Italic author names */
+  color: #333;
+}
+
+.comment p {
+  margin: 5px 0 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .posts {
+    flex-direction: column;
+    align-items: center;
+  }
+}
